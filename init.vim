@@ -1,11 +1,10 @@
 " configurations -----------------------------------------
 
 set number
-" set mouse=a
-set numberwidth=1
+set numberwidth=2
 set clipboard=unnamed
 syntax enable
-" set showcmd
+"set showcmd
 set ruler
 set cursorline
 set encoding=utf-8
@@ -22,5 +21,5 @@ so ~/AppData/Local/nvim/plugin-config.vim
 
 " maps ---------------------------------------------------
 
-" so ~/AppData/Local/nvim/maps.vim
+so ~/AppData/Local/nvim/maps.vim
 
