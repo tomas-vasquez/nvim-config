@@ -1,4 +1,7 @@
-let mapleader=" "
+let mapleader="\ "
+
+cnoreabbrev W w
+cnoreabbrev Q q
 
 " NerdTree
 cnoreabbrev n NERDTreeToggle
@@ -35,9 +38,21 @@ nnoremap <silent> <C-e> 10<C-e>
 nnoremap <silent> <C-y> 10<C-y>
 nmap <Leader>s <Plug>(easymotion-s2)
 
+"git
 nnoremap <Leader>G :G<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
-nnoremap <Leader>x :!node %<cr>
+"tabs
+function OpenTab(tab)
+  if a:tab == "next"
+    :tabnext
+  else
+    :tabprevious
+  endif
+  :AirlineToggle
+  :AirlineToggle
+endfunction
 
+nnoremap <C-Right> :call OpenTab("next")<cr>
+nnoremap <C-Left> :call OpenTab("provious")<cr>

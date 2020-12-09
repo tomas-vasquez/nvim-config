@@ -1,4 +1,4 @@
-call plug#begin('~/AppData/Local/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged/')
 " syntax
 Plug 'sheerun/vim-polyglot'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -7,18 +7,21 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'flowtype/vim-flow'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 
 " status bar
-Plug 'maximbaz/lightline-ale'
-Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Themes
-Plug 'mhartington/oceanic-next'
+Plug 'drewtempelmeyer/palenight.vim'
 
 " Tree
 Plug 'scrooloose/nerdtree'
+
+"icons
+Plug 'ryanoasis/vim-devicons'
 
 " typing
 Plug 'alvan/vim-closetag'
@@ -30,7 +33,6 @@ Plug 'benmills/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 
 " autocomplete
-Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'do': 'npm install'}
 
 " test
@@ -46,9 +48,14 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'KabbAmine/vCoolor.vim'
+Plug 'Xuyuanp/scrollbar.nvim'
+Plug 'mhinz/vim-startify'
 
 " git
+Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
-"Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 
-call plug#end()
+ call plug#end()
