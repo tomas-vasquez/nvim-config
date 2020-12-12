@@ -1,4 +1,24 @@
-let g:indentLine_char_list = ['│','|', '¦', '┆', '┊']
+"startify
+let g:startify_lists = [
+\ { 'type': 'files',     'header': ['   MRU']            },
+          \ ]
+
+let g:startify_custom_header = [
+  \ '                                                                                   ___',
+  \ '                                                                                  |__ \',
+  \ '     ___ ___  _ __ ___   ___    _ __  _ __ ___   __ _ _ __ __ _ _ __ ___   __ _ _ __ ) |',
+  \ "    / __/ _ \\| '_ ` _ \\ / _ \\  | '_ \\| '__/ _ \\ / _` | '__/ _` | '_ ` _ \\ / _` | '__/ /",
+  \ '   | (_| (_) | | | | | | (_) | | |_) | | | (_) | (_| | | | (_| | | | | | | (_| | | |_|',
+  \ '    \___\___/|_| |_| |_|\___/  | .__/|_|  \___/ \__, |_|  \__,_|_| |_| |_|\__,_|_| (_)',
+  \ '                               | |               __/ |',
+  \ '                               |_|              |___/',
+  \'',
+  \ ]
+
+"indentLine
+let g:indentLine_char_list = ['│']
+let g:indentLine_bufTypeExclude = ['help', 'terminal', 'nerdtree']
+let g:indentLine_fileTypeExclude = [ 'startify' ]
 
 " Editor theme
 function! TrailingSpaceHighlights() abort
@@ -45,7 +65,6 @@ let g:palenight_color_overrides = {
 \}
 
 "  nerdtree
-let g:indentLine_fileTypeExclude = ['nerdtree']
 let g:webdevicons_enable_nerdtree = 0
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
