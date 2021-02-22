@@ -10,7 +10,7 @@ set encoding=utf-8
 set showmatch
 set expandtab
 set tabstop=2 shiftwidth=2
-set relativenumber
+"set relativenumber
 
 
 " plugins ---------------------------------------------------

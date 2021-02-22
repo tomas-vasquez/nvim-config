@@ -16,12 +16,14 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'ErichDonGubler/vim-sublime-monokai'
 
 " Tree
 Plug 'scrooloose/nerdtree'
 
 "icons
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " typing
 Plug 'alvan/vim-closetag'
@@ -49,7 +51,7 @@ Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'KabbAmine/vCoolor.vim'
-Plug 'Xuyuanp/scrollbar.nvim'
+Plug 'sslivkoff/vim-scroll-barnacle'
 Plug 'mhinz/vim-startify'
 
 " git
