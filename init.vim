@@ -1,6 +1,6 @@
 " configurations -----------------------------------------
 set number
-set numberwidth=2
+set numberwidth=3
 set clipboard=unnamed
 syntax enable
 set showcmd
@@ -12,6 +12,7 @@ set expandtab
 set tabstop=2 shiftwidth=2
 "set relativenumber
 
+set mouse=a
 
 " plugins ---------------------------------------------------
 

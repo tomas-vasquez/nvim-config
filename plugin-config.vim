@@ -4,7 +4,7 @@ let g:startify_lists = [
           \ ]
 
 "indentLine
-let g:indentLine_char_list = ['│']
+let g:indentLine_char_list = ['|']
 let g:indentLine_bufTypeExclude = ['help', 'terminal']
 let g:indentLine_fileTypeExclude = [ 'startify' , 'nerdtree']
 
@@ -62,23 +62,6 @@ let g:signify_sign_change            = '>'
 
 highlight SignifySignChange  guifg=#fff000
 highlight SignifySignAdd     guifg=#22D039
-
-"scroollbar
-augroup ScrollbarInit
-  autocmd!
-  autocmd CursorMoved,VimResized,QuitPre * silent! lua require('scrollbar').show()
-  autocmd WinEnter,FocusGained           * silent! lua require('scrollbar').show()
-  autocmd WinLeave,FocusLost,BufLeave    * silent! lua require('scrollbar').clear()
-augroup end
-
-let g:scrollbar_shape = {
-   \ 'head': '█',
-   \ 'body': '█',
-   \ 'tail': '█',
-   \ }
-let g:scrollbar_max_size = 3
-let g:scrollbar_excluded_filetypes = ['nerdtree', 'tagbar']
-
 
 "coc
 let g:coc_global_extensions = [
